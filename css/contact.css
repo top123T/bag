@@ -1,0 +1,136 @@
+.header {
+    background-image: url('../img/10.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 背景图片覆盖整个元素 */
+    background-position: center; /* 背景图片居中显示 */
+    color: black; /* 文字颜色 */
+    padding: 20px; /* 增加上下的padding以确保文字在图片中间显示 */
+    text-align: center; /* 文字居中 */
+}
+.nav {
+    background-color:#E0E0E0; /* 灰色背景 */
+    padding: 10px;
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.nav ul {
+    list-style: none; /* 移除列表项的默认样式 */
+    padding: 0; /* 移除默认的内边距 */
+    margin: 0; /* 移除默认的外边距 */
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 垂直居中 */
+}
+
+.nav li {
+    margin: 0 10px; /* 在列表项之间添加一些空间 */
+}
+
+.nav a {
+    text-decoration: none; /* 移除链接下划线 */
+    color: #333; /* 设置链接颜色 */
+    padding: 5px 10px; /* 添加一些内边距使链接更易点击 */
+    position: relative;
+}
+
+.nav a:hover {
+    color: #409EFF; /* 鼠标悬停时的链接颜色 */
+}
+/* 工具提示基础样式 */
+.nav .tooltip {
+    visibility: hidden;
+    width: 160px;
+    background-color: #fff;
+    color:black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+    top:125%;
+    left: 50%;
+    margin-left: -80px; /* 使其居中 */
+
+    /* 用于创建小箭头 */
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+/* 鼠标悬停时显示工具提示 */
+.nav a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+/*!* 确保主体内容居中显示 *!*/
+/*.main {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    height: 100vh; !* 使用视口高度确保内容垂直居中 *!*/
+/*}*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 控制卡片之间的空隙 */
+}
+/* 卡片样式 */
+    .card {
+        text-align: center; /* 使卡片内的文本居中，包括h2标题 *
+    flex-direction: column; /* 如果不需要图片和内容并排，改为列布局 */
+    align-items: center; /* 居中对齐卡片内的所有元素 */
+    background-color: #fff; /* 卡片的背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    border-radius: 10px; /* 边框圆角 */
+    padding: 20px; /* 内边距 */
+    margin: 10px 0; /* 外边距，确保卡片之间有空隙 */
+    width: 90%; /* 卡片宽度，根据需要调整 */
+    max-width: 800px; /* 最大宽度，根据需要调整 */
+}
+
+
+.card h2 {
+    margin: 0 auto 20px auto; /* 调整h2的外边距，确保其在卡片顶部居中 */
+}
+
+.card p {
+    text-align: left; /* 段落文本左对齐 */
+    margin: 10px 0; /* 为段落添加上下外边距，确保分行显示 */
+    max-width: 100%; /* 确保段落宽度不超过卡片宽度 */
+    display: block; /* 确保每个段落都是块级元素，自动换行 */
+}
+
+/* 以下是表单样式，确保表单元素也分行显示 */
+form {
+    text-align: center; /* 表单居中显示 */
+    margin: 20px auto; /* 表单外边距 */
+}
+
+form label, form input, form textarea, form button {
+    display: block; /* 使表单元素块级显示，确保换行 */
+    margin: 10px auto; /* 添加外边距 */
+    width: 90%; /* 表单元素宽度，根据需要调整 */
+    max-width: 500px; /* 限制最大宽度，根据需要调整 */
+}
+
+form input, form textarea {
+    padding: 10px; /* 输入框和文本区域的内边距 */
+    border: 1px solid #ccc; /* 边框样式 */
+    border-radius: 4px; /* 圆角边框 */
+}
+
+form button {
+    background-color: #409EFF; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    padding: 10px 15px; /* 按钮内边距 */
+    border: none; /* 移除边框 */
+    border-radius: 4px; /* 圆角边框 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+}
+
+form button:hover {
+    background-color: #66b1ff; /* 鼠标悬停时按钮背景颜色变化 */
+}
