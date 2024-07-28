@@ -4,26 +4,114 @@
     <meta charset="UTF-8">
     <title>产品展示 - 惠州市亭宇康箱包有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="惠州亭宇康箱包有限公司, 产品展示" />
-    <meta name="description" content="探索惠州亭宇康箱包有限公司的产品系列，包括最新款式的背包、手提包、旅行箱等。" />
-    <link rel="stylesheet" type="text/css" media="all" href="css/index.css">
+    <meta name="keywords" content="惠州市亭宇康箱包有限公司, 产品展示" />
+    <meta name="description" content="探索惠州市亭宇康箱包有限公司的产品系列，包括最新款式的背包、手提包、旅行箱等。" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/products.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
 <header class="header">
     <h1>产品展示</h1>
 </header>
 <div class="nav">
-    <ul>
-        <li><a href="index.html">主页</a></li>
-        <li><a href="about.html">关于我们</a></li>
-        <li><a href="products.html">产品展示</a></li>
-        <li><a href="ecommerce.html">电子商务</a></li>
-        <li><a href="contact.html">联系我们</a></li>
-        <li><a href="#admin">管理员入口</a></li>
-    </ul>
+    <div class="nav-center">
+        <ul >
+            <li><a href="index.html">主页<span class="tooltip">主页</span></a></li>
+            <li><a href="about.html">关于我们<span class="tooltip">关于我们</span></a></li>
+            <li><a href="products.html">产品展示<span class="tooltip">产品展示</span></a></li>
+            <li><a href="ecommerce.html">电子商务<span class="tooltip">电子商务</span></a></li>
+            <li><a href="contact.html">联系我们<span class="tooltip">加入我们</span></a></li>
+            <li><a href="#admin" id="adminEntry">管理员入口<span class="tooltip">点击这里登录后台管理</span></a></li>
+        </ul>
+    </div>
+        <!-- 语言切换 -->
+        <!-- <li class="language-switch">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('zh')">中文</button>
+        </li> -->
+
+        <div class="language-switch">
+            <a href="products_en.html">English</a>/<a href="products.html">中文</a>
+        </div>
 </div>
+
 <div class="content">
     <!-- 产品展示区 -->
+    <!-- <div class="slider">
+        <div class="slides">
+            <img src="img/t1.png" alt="Slide 1">
+            <img src="img/t2.png" alt="Slide 2">
+            <img src="img/t3.png" alt="Slide 3">
+            <img src="img/t4.png" alt="Slide 4">
+            <img src="img/t5.png" alt="Slide 5">
+            <img src="img/t6.png" alt="Slide 6">
+        </div>
+    </div> -->
+      <!-- 轮播图区域 -->
+      <!-- <div class="carousel">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <input type="radio" name="radio-btn" id="img-2" />
+            <input type="radio" name="radio-btn" id="img-3" />
+            <input type="radio" name="radio-btn" id="img-4" />
+            <input type="radio" name="radio-btn" id="img-5" />
+            <input type="radio" name="radio-btn" id="img-6" />
+
+            <div class="slide first">
+                <img src="img/t1.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="img/t2.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="img/t3.png" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="img/t4.png" alt="Image 4">
+            </div>
+            <div class="slide">
+                <img src="img/t5.png" alt="Image 5">
+            </div>
+            <div class="slide">
+                <img src="img/t6.png" alt="Image 6">
+            </div>
+
+            <!-- 自动导航区 -->
+            <!-- <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+            </div>
+        </div> -->
+        <!-- 手动导航区 -->
+        <!-- <div class="navigation-manual">
+            <label for="img-1" class="manual-btn"></label>
+            <label for="img-2" class="manual-btn"></label>
+            <label for="img-3" class="manual-btn"></label>
+            <label for="img-4" class="manual-btn"></label>
+            <label for="img-5" class="manual-btn"></label>
+            <label for="img-6" class="manual-btn"></label>
+        </div>
+    </div> --> 
+    <div class="swiper-container" style="width: 900px; height: 500px; margin: 10px auto;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/t1.png" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="img/t2.png" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="img/t3.png" alt="Slide 3"></div>
+            <div class="swiper-slide"><img src="img/t4.png" alt="Slide 4"></div>
+            <div class="swiper-slide"><img src="img/t5.png" alt="Slide 5"></div>
+            <div class="swiper-slide"><img src="img/t6.png" alt="Slide 6"></div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
     <div class="product-display">
         <h2>我们的产品</h2>
         <p>探索我们的产品系列，发现您的完美选择。</p>
@@ -33,27 +121,29 @@
             <a href="#travel-bags">旅行箱</a> |
             <a href="#handbags">手提包</a>
         </div>
+    </div>
+    <div class="product-cards">
         <!-- 产品卡片 -->
         <div class="card">
             <img src="img/p9.jpg" alt="产品1" class="card-image">
             <div class="card-content">
                 <h3>产品名称1</h3>
                 <p>简短描述或独特卖点。</p>
-                <a href="product-detail.html">了解更多</a>
+                <a href="javascript:void(0);">了解更多</a>
             </div>
         </div>
         <div class="card">
             <img src="img/p6.jpg" alt="产品2" class="card-image">
             <div class="card-content">
-                <h3>产品名称1</h3>
+                <h3>产品名称2</h3>
                 <p>简短描述或独特卖点。</p>
-                <a href="product-detail.html">了解更多</a>
+                <a href="javascript:void(0);">了解更多</a>
             </div>
         </div>
         <!-- 更多产品卡片 -->
     </div>
     <!-- 热销产品和新品推荐 -->
-    <div class="hot-new-products">
+    <div class="hot-products">
         <h2>热销产品</h2>
         <!-- 热销产品卡片 -->
         <div class="card">
@@ -61,9 +151,11 @@
             <div class="card-content">
                 <h3>热销产品名称</h3>
                 <p>简短描述或独特卖点。</p>
-                <a href="product-detail.html">了解更多</a>
+                <a href="javascript:void(0);">了解更多</a>
             </div>
         </div>
+    </div>
+    <div class="new-products">
         <!-- 更多热销产品卡片 -->
         <h2>新品推荐</h2>
         <!-- 新品推荐卡片 -->
@@ -72,7 +164,7 @@
             <div class="card-content">
                 <h3>新品名称</h3>
                 <p>简短描述或独特卖点。</p>
-                <a href="product-detail.html">了解更多</a>
+                <a href="javascript:void(0);">了解更多</a>
             </div>
         </div>
         <!-- 更多新品推荐卡片 -->
@@ -81,5 +173,24 @@
 <footer>
     <p>版权所有 &copy; 惠州市亭宇康箱包有限公司</p>
 </footer>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </body>
 </html>

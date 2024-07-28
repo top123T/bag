@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>关于我们 - 惠州市亭宇康箱包有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="惠州亭宇康箱包有限公司, 关于我们" />
-    <meta name="description" content="了解惠州亭宇康箱包有限公司的历史、企业文化、创始人寄语、发展历程、社会责任和联系方式。" />
+    <meta name="keywords" content="惠州市亭宇康箱包有限公司, 关于我们" />
+    <meta name="description" content="了解惠州市亭宇康箱包有限公司的历史、企业文化、创始人寄语、发展历程、社会责任和联系方式。" />
     <link rel="stylesheet" type="text/css" media="all" href="css/index.css">
 </head>
 <body>
@@ -13,14 +13,26 @@
     <h1>关于惠州市亭宇康箱包有限公司</h1>
 </header>
 <div class="nav">
-    <ul>
-        <li><a href="index.html">主页</a></li>
-        <li><a href="about.html">关于我们</a></li>
-        <li><a href="products.html">产品展示</a></li>
-        <li><a href="ecommerce.html">电子商务</a></li>
-        <li><a href="contact.html">联系我们<span class="tooltip">加入我们</span></a></li>
-        <li><a href="#admin" id="adminEntry">管理员入口<span class="tooltip">点击这里登录后台管理</span></a></li>
-    </ul>
+    <div class="nav-center">
+        <ul >
+            <li><a href="index.html">主页<span class="tooltip">主页</span></a></li>
+            <li><a href="about.html">关于我们<span class="tooltip">关于我们</span></a></li>
+            <li><a href="products.html">产品展示<span class="tooltip">产品展示</span></a></li>
+            <li><a href="ecommerce.html">电子商务<span class="tooltip">电子商务</span></a></li>
+            <li><a href="contact.html">联系我们<span class="tooltip">加入我们</span></a></li>
+            <li><a href="#admin" id="adminEntry">管理员入口<span class="tooltip">点击这里登录后台管理</span></a></li>
+        </ul>
+    </div>
+        <!-- 语言切换 -->
+        <!-- <li class="language-switch">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('zh')">中文</button>
+        </li> -->
+
+        <div class="language-switch">
+            <a href="about_en.html" class="lang lang-switch-en">English</a>/<a href="about.html" class="lang lang-switch-zh">中文</a>
+        </div>
+
 </div>
 <div class="content">
     <!-- 页首图像与标语 -->
@@ -37,7 +49,7 @@
         <img src="img/e.jpg" alt="公司简介" class="card-image">
         <div class="card-content">
             <h2>公司简介</h2>
-            <p>惠州亭宇康箱包有限公司，成立于21世纪初，专注于箱包设计、生产和销售...</p>
+            <p>惠州市亭宇康箱包有限公司，成立于21世纪初，专注于箱包设计、生产和销售...</p>
         </div>
     </div>
 
@@ -92,5 +104,6 @@
 <footer>
     <p>版权所有 &copy; 惠州市亭宇康箱包有限公司</p>
 </footer>
+<!-- <script src="js/languageSwitch.js"></script> -->
 </body>
 </html>

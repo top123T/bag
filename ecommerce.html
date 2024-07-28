@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>电子商务 - 惠州市亭宇康箱包有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="惠州亭宇康箱包有限公司, 电子商务" />
-    <meta name="description" content="惠州亭宇康箱包有限公司的电子商务平台，提供多样化的箱包产品，包括旅行箱包、时尚手提包、户外背包等。" />
+    <meta name="keywords" content="惠州市亭宇康箱包有限公司, 电子商务" />
+    <meta name="description" content="惠州市亭宇康箱包有限公司的电子商务平台，提供多样化的箱包产品，包括旅行箱包、时尚手提包、户外背包等。" />
     <link rel="stylesheet" type="text/css" media="all" href="css/index.css">
 </head>
 <body>
@@ -13,14 +13,25 @@
     <h1>电子商务平台</h1>
 </header>
 <div class="nav">
-    <ul>
-        <li><a href="index.html">主页</a></li>
-        <li><a href="about.html">关于我们</a></li>
-        <li><a href="products.html">产品展示</a></li>
-        <li><a href="ecommerce.html">电子商务</a></li>
-        <li><a href="contact.html">联系我们</a></li>
-        <li><a href="#admin">管理员入口</a></li>
-    </ul>
+    <div class="nav-center">
+        <ul >
+            <li><a href="index.html">主页<span class="tooltip">主页</span></a></li>
+            <li><a href="about.html">关于我们<span class="tooltip">关于我们</span></a></li>
+            <li><a href="products.html">产品展示<span class="tooltip">产品展示</span></a></li>
+            <li><a href="ecommerce.html">电子商务<span class="tooltip">电子商务</span></a></li>
+            <li><a href="contact.html">联系我们<span class="tooltip">加入我们</span></a></li>
+            <li><a href="#admin" id="adminEntry">管理员入口<span class="tooltip">点击这里登录后台管理</span></a></li>
+        </ul>
+    </div>
+        <!-- 语言切换 -->
+        <!-- <li class="language-switch">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('zh')">中文</button>
+        </li> -->
+
+        <div class="language-switch">
+            <a href="ecommerce_en.html">English</a>/<a href="ecommerce.html">中文</a>
+        </div>
 </div>
 <div class="content">
     <div class="card">
