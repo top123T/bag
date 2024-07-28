@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Showcase - Huizhou Tingyukang Bag Co., Ltd.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Huizhou Tingyukang Bag Co., Ltd., Product Showcase" />
+    <meta name="description" content="Explore the product range of Huizhou Tingyukang Bag Co., Ltd., including the latest styles of backpacks, handbags, and travel bags." />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/products.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <h1>Product Showcase</h1>
+</header>
+<div class="nav">
+    <div class="nav-center">
+        <ul>
+            <li><a href="index.html">Home<span class="tooltip">Home</span></a></li>
+            <li><a href="about.html">About Us<span class="tooltip">About Us</span></a></li>
+            <li><a href="products.html">Products<span class="tooltip">Products</span></a></li>
+            <li><a href="ecommerce.html">E-commerce<span class="tooltip">E-commerce</span></a></li>
+            <li><a href="contact.html">Contact Us<span class="tooltip">Join Us</span></a></li>
+            <li><a href="#admin" id="adminEntry">Admin Entry<span class="tooltip">Click here to log in to the admin panel</span></a></li>
+        </ul>
+    </div>
+    <div class="language-switch">
+        <a href="products_en.html">English</a>/<a href="products.html">中文</a>
+    </div>
+</div>
+<div class="content">
+    <div class="swiper-container" style="width: 900px; height: 500px; margin: 10px auto;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/t1.png" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="img/t2.png" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="img/t3.png" alt="Slide 3"></div>
+            <div class="swiper-slide"><img src="img/t4.png" alt="Slide 4"></div>
+            <div class="swiper-slide"><img src="img/t5.png" alt="Slide 5"></div>
+            <div class="swiper-slide"><img src="img/t6.png" alt="Slide 6"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="product-display">
+        <h2>Our Products</h2>
+        <p>Explore our product range and find your perfect choice.</p>
+        <div class="product-categories">
+            <a href="#backpacks">Backpacks</a> |
+            <a href="#travel-bags">Travel Bags</a> |
+            <a href="#handbags">Handbags</a>
+        </div>
+    </div>
+    <div class="product-cards">
+        <div class="card">
+            <img src="img/p9.jpg" alt="Product 1" class="card-image">
+            <div class="card-content">
+                <h3>Product Name 1</h3>
+                <p>Brief description or unique selling point.</p>
+                <a href="javascript:void(0);">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/p6.jpg" alt="Product 2" class="card-image">
+            <div class="card-content">
+                <h3>Product Name 2</h3>
+                <p>Brief description or unique selling point.</p>
+                <a href="javascript:void(0);">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="hot-products">
+        <h2>Bestsellers</h2>
+        <div class="card">
+            <img src="img/p2.jpg" alt="Bestselling Product" class="card-image">
+            <div class="card-content">
+                <h3>Bestselling Product Name</h3>
+                <p>Brief description or unique selling point.</p>
+                <a href="javascript:void(0);">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="new-products">
+        <h2>New Arrivals</h2>
+        <div class="card">
+            <img src="img/p7.jpg" alt="New Product" class="card-image">
+            <div class="card-content">
+                <h3>New Product Name</h3>
+                <p>Brief description or unique selling point.</p>
+                <a href="javascript:void(0);">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>All rights reserved &copy; Huizhou Tingyukang Bag Co., Ltd.</p>
+</footer>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</body>
+</html>
